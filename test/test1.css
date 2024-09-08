@@ -1,0 +1,152 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.popup-content #product-global{
+    display: flex;
+    align-content: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.popup-content #product-korean{
+    display: flex;
+    align-content: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.product {
+    background: rgba(162, 0, 255, 0.144);
+    width: calc(25% - 20px);
+    height: auto; /* تغيير الطول إلى تلقائي للسماح بمحتوى متنوع */
+    margin: 10px;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    align-items: center; /* محاذاة العناصر في المركز */
+    padding: 10px; /* إضافة حشوة حول المحتوى */
+    box-sizing: border-box;
+    text-align: center; /* محاذاة النصوص في المركز */
+}
+
+.product img {
+    height: 120px;
+    width: 140px;
+    max-height: 120px; /* تحديد أقصى ارتفاع للصورة */
+    object-fit: cover; /* الحفاظ على نسبة الصورة وتجنب تشوهها */
+    margin-bottom: 10px; /* إضافة مساحة أسفل الصورة */
+}
+
+.a {
+    font-size: 22px;
+    color: rgb(255, 196, 0);
+    margin: 10px 0; /* إضافة مسافة أعلى وأسفل النص */
+}
+
+.b {
+    background: #fdfdfd;
+    color: #000000;
+    font-size: 17px;
+    border-radius: 2rem;
+    margin-top: 10px; /* إضافة مساحة أعلى الزر */
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 0; /* إضافة حشوة حول النص */
+    margin: 0px;
+}
+
+.b:hover {
+    background: #c5c5c5;
+}
+
+.bb {
+    font-size: 18px;
+}
+
+.bc {
+    font-size: 15px;
+    color: red;
+    text-decoration: line-through;
+}
+
+/* تحسين العرض على الشاشات الصغيرة */
+@media (max-width: 1200px) {
+    .product {
+        width: calc(33.333% - 20px); /* ثلاثة عناصر في الصف الواحد */
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px); /* عنصران في الصف الواحد */
+    }
+}
+
+@media (max-width: 600px) {
+    .product {
+        width: calc(100% - 20px); /* عنصر واحد في الصف الواحد */
+        margin: 10px 0;
+    }
+
+    .popup-content {
+        width: 95%;
+    }
+
+    .close-btn {
+        font-size: 20px;
+    }
+}

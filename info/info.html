@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>يلا نشتري</title>
+
+    <!-- ربط الأيقونة -->
+    <link rel="icon" href="../img/uc.png" type="image/png">
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="../info/info.css">
+    <!-- ربط الخطوط -->
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- نافذة منبثقة لكل شخص -->
+    <div class="bgo" id="bgo1">
+        <div class="box">
+            <div class="boxx">
+                <div class="x">
+                    <div class="exit">
+                        <div class="hamburger1" onclick="closeModal('bgo1')">X</div>
+                    </div>
+                    <div class="ph">معلومات الدفع -عباس جبار</div>
+                </div>
+                <div class="y">
+                    <div class="ya">
+                        <p>معلومات الدفع الخاصة عباس جبار...</p>
+                    </div>
+                </div>
+                <div class="zz">
+                    <p>راسلنا واخذ شداتك</p>
+                </div>
+                <button class="z" data-url="https://www.instagram.com/c4_fz/">
+                    
+                        <p>تواصل</p>
+                    
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bgo" id="bgo2">
+        <div class="box">
+            <div class="boxx">
+                <div class="x">
+                    <div class="exit">
+                        <div class="hamburger1" onclick="closeModal('bgo2')">X</div>
+                    </div>
+                    <div class="ph">معلومات الدفع - سيف حسن</div>
+                </div>
+                <div class="y">
+                    <div class="ya">
+                        <p>معلومات الدفع الخاصة بسيف حسن...</p>
+                    </div>
+                </div>
+                <div class="zz">
+                    <p>راسلنا واخذ شداتك</p>
+                </div>
+                <button class="z" class="z" data-url="https://t.me/eng_tero">
+                   
+                        <p>تواصل</p>
+                    
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bgo" id="bgo3">
+        <div class="box">
+            <div class="boxx">
+                <div class="x">
+                    <div class="exit">
+                        <div class="hamburger1" onclick="closeModal('bgo3')">X</div>
+                    </div>
+                    <div class="ph">معلومات الدفع -  حسن</div>
+                </div>
+                <div class="y">
+                    <div class="ya">
+                        <p>معلومات الدفع الخاصة  حسن...</p>
+                    </div>
+                </div>
+                <div class="zz">
+                    <p>راسلنا واخذ شداتك</p>
+                </div>
+                <button class="z" data-url="#">
+                    
+                        <p>تواصل</p>
+                   
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- باقي المحتوى هنا -->
+    <div class="container">
+        <!-- شريط التنقل -->
+        <div class="nav-container">
+            <!-- أيقونة الهامبرغر -->
+            <div class="hamburger" onclick="toggleMenu(this)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav>
+                <h3 class="logo">شداتك</h3>
+                <ul id="navbar">
+                    <li><a href="../first_step.html">الصفحة الرئيسية</a></li>
+                    <li><a href="../one/one.html">ببجي العالمية</a></li>
+                    <li><a href="../two/two.html">ببجي الكورية</a></li>
+                    <li><a href="../offers/offers.html">العروض</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- قسم الأبطال -->
+        <div class="hero">
+            <div class="go">
+                <p>يـــلا تواصل واخذ شداتك</p>
+            </div>
+            <div class="uc">
+                <!-- محتوى المستخدمين -->
+                <div class="e">
+                    <p class="a"> عباس جبار</p>
+                    <button class="b" data-person="bgo1">
+                        <div class="bb">تواصل</div>
+                    </button>
+                </div>
+                <div class="e">
+                    <p class="a">سيف حسن</p>
+                    <button class="b" data-person="bgo2">
+                        <div class="bb">تواصل</div>
+                    </button>
+                </div>
+                <div class="e">
+                    <p class="a"> حسن</p>
+                    <button class="b" data-person="bgo3">
+                        <div class="bb">تواصل</div>
+                    </button>
+                </div>
+                <!-- يمكنك إضافة المزيد من الأشخاص هنا -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ربط ملف JavaScript -->
+    <script src="../info/info.js"></script>
+</body>
+
+</html>
